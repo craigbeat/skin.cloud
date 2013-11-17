@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<defaultcontrol always="true">420</defaultcontrol>
+	<backgroundcolor>F</backgroundcolor>
+	<allowoverlay>yes</allowoverlay>
+	<controls>
+		<!-- Use Vertical Home menu-->
+		<include condition="Skin.HasSetting(homemenu-vertical)">VertHomeMenu</include>
+		<!-- Use Horizontal Home menu-->
+		<include condition="Skin.HasSetting(homemenu-horizontal) | !Skin.HasSetting(homemenu-vertical)">HorzHomeMenu</include>
+	</controls>
+</window>
